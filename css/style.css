@@ -212,13 +212,11 @@ header a{
 /* section noticia */
 
 main{
-    
+    display: flex;
 }
 
 main .forum {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 3;
+   
 }
 
 main .forum .forum_text {
@@ -226,6 +224,71 @@ main .forum .forum_text {
 }
 
 main .article_container{
-   display: grid;
-    margin: 21px 0px 0 0;
+   
 }
+
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer .visual ul {
+    display: flex;
+}
+
+footer .photo ul{
+    display: flex;
+}
+
+footer .footer3 ul{
+    display: flex;
+}
+
+footer ul{
+    list-style: none;
+}
+
+
+/*banner final*/
+
+.banner_final{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #939598;
+    height: 31px;
+    text-transform: uppercase;
+    
+    margin: 20px 0 0 0;
+    
+}
+.banner_final .ultimate{
+    margin: 0;
+    padding: 0;
+}
+
+.banner_final .ultimate ul{
+    list-style: none;
+    display: flex;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.banner_final .ultimate ul li{
+    border:  0 solid #ffffff88 ;
+    border-right-width: 1px;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;    
+}
+
