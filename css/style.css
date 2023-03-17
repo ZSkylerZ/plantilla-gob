@@ -94,8 +94,8 @@ header a{
 .branding .logo{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    
 }
 
 .branding .logo_img{
@@ -110,17 +110,19 @@ header a{
 .branding .logo .text h1{
     font-size: 31px;
     margin: 0;
-    font-weight:500;
+    font-weight:600;
+    line-height: 31px;
 }
 
-.branding .logo .text .strench{
-    font-weight: bold;
+.branding .logo .text h1 strong{
+    font-weight: 900;
 }
 
 .branding .logo .text p{
     font-size: 10px;
     margin: 0;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 10px;
 }
 
 .branding .links{
@@ -152,20 +154,36 @@ header a{
     width: 25px;
     height: 25px;
     background-image: url("/img/youtube.jpg");
-    margin-right: 7px;
+    margin-right: 10px;
 }
 
-.branding .links .form{
-    border-radius: 3px;
-    border-color: #d6d7d8;
-    border-right: none;
+.branding .links .frm-search{
+    position: relative;
+    padding-right: 12.5px;
 }
 
-.branding .links .form .strench{
-    display: flex;
+.branding .links .frm-search input{
+    display: block;
+    width: 150px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #d9dadc;
+    padding-right: 17.5px;
+    box-sizing: border-box;
+}
+
+.branding .links .frm-search::after{
+    display: block;
+    content:"";
     width: 25px;
     height: 25px;
     background-image: url("/img/arrow-right.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 100%;
 }
 
 /* container + menu */
