@@ -229,38 +229,71 @@ header a{
 }
 
 /* section noticia */
-
-.container main {
-
+.body-container {
+    display: flex;
+    flex-direction:row;
 }
+
+.body-container .banner{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.body-container .banner .banner-img{
+    width: calc(100% / 3 * 2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.body-container .banner .banner-img img{
+    width: 100%;
+    display: block;
+}
+
+.body-container .banner .banner_text{
+    width: calc(100% / 3 * 1);
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    font-weight:300;
+    font-size: 18px;
+}
+
+.body-container .banner .banner_text h4{
+    font-weight:700;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.body-container .banner .banner_text::before{
+    content: "";
+    background-color: #b2b4b6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-10px);
+}
+
 main{
    
     margin: 0;
     padding: 0;
+    width: calc(100% / 4 * 3);
 }
 
 
-main .forum {
-    
-}
 
-main .forum .forum_text {
-    background-color: #b2b4b6;
-    font-weight:700;
-    padding-left: 21px;
-    margin: 0;
-}
 
-main .forum .forum_text h4{
-    font-weight:900;
-    font-size: 20px;
-    text-transform: uppercase;
-    
-}
 
-main .forum .forum_text p{
-    font-weight:300;
-}
+
+
+
 
 main .article_container{
   
@@ -283,7 +316,8 @@ main .article_container a{
 
 /*aside*/
 
-main aside {
+aside {
+    width: calc(100% / 4 );
     
 }
 
