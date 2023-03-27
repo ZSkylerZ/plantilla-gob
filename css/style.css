@@ -287,18 +287,34 @@ header a{
 
 
 .body-container .article_container{
-  display: flex;
-  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .body-container .article_container article{
     display: flex;
     flex-direction: column;
+    width: 280px;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+.body-container  .article-img{
+    display: flex;
+}
+
+.body-container  .article-img img{
+    width: 280px;
+   
+}
+
 
 main .article_container h4{
     font-weight:900;
@@ -324,6 +340,7 @@ main .article_container a{
 
 aside {
     width: calc(100% / 4 );
+    
     
 }
 
