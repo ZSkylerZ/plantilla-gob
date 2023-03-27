@@ -234,10 +234,15 @@ header a{
     flex-direction:row;
 }
 
+.body-container main{
+    margin: 0;
+    padding: 0;
+    width: calc(100% / 4 * 3);
+}
+
 .body-container .banner{
     display: flex;
     flex-direction: row;
-    
 }
 
 .body-container .banner .banner-img{
@@ -280,37 +285,38 @@ header a{
     transform: translateX(-10px);
 }
 
-main{
-   
-    margin: 0;
-    padding: 0;
-    width: calc(100% / 4 * 3);
+
+.body-container .article_container{
+  display: flex;
+  
 }
 
-
-
-
-
-
-
-
-
-main .article_container{
-  
+.body-container .article_container article{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 main .article_container h4{
     font-weight:900;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 main .article_container p{
     font-weight:300;
+    margin: 0;
+    padding: 0;
 }
 
 main .article_container a{
     font-weight:600;
     text-decoration:none;
+    padding-top: 10px;
 }
 
 
@@ -348,6 +354,7 @@ footer .footer3 ul{
 
 footer ul{
     list-style: none;
+    color: #939599;
 }
 
 
