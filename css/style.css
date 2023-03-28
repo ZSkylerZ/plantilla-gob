@@ -341,7 +341,53 @@ main .article_container a{
 aside {
     width: calc(100% / 4 );
     
+}
+
+.blog .subcontainer {
     
+}
+
+.blog .subcontainer .subtitle{
+    background-color: #cc1526;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 28px;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+.subcontainer ul{
+    list-style: none;
+    padding-left: 10px;
+    font-weight:600;
+}
+
+
+.subcontainer ul .blog-enlace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.subcontainer ul .blog-enlace a{
+    color: #3a58a1;
+    text-decoration: none;
+    background-color:#eceef5;
+    border-radius: 2px;
+    border: 1px solid #cad4e9;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.subcontainer ul .blog-enlace p{
+    border: 1px solid #e8e9eb;
+    padding: 0px 7px;
+}
+
+.subcontainer ul .blog-enlace a img{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /*footer*/
