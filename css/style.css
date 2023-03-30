@@ -191,20 +191,36 @@ header a{
 .container .menu{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: #dc2225;
     list-style: none;
     padding: 0;
     margin: 0;
     border-radius: 5px;
-    height: 39px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-.container .menu a{
-    text-decoration: none;
-    border: 0 solid #ffffff88;
+
+.container .menu li{
+    display: flex;
+    align-items: center;
+    border: 0 solid #c9c7c76b;
     border-right-width: 1px;
-    
 }
+
+.container .menu li:last-child {
+    border: none;
+}
+.container .menu  li a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 13px 10px;
+}
+
+
 
 .icon-arrow_bottom-menu{
     display: inline-block;
@@ -221,11 +237,32 @@ header a{
 .container .breadcrum{
     display: flex;
     flex-direction: row;
+    
+}
+
+.container .breadcrum ul{
+    display: flex;
+    flex-direction: row;
     list-style: none;
     margin-top: 21px;
     margin-bottom: 21px;
     padding-left: 12px;
     text-transform: uppercase;
+    color: #939598;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+.container .breadcrum li:first-child{
+    color: #ed2028;
+}
+
+
+.container .breadcrum ul img{
+    padding: 2px 6px;
+    width: 10px;
+    height: 10px;
 }
 
 /* section noticia */
@@ -317,6 +354,7 @@ header a{
 
 
 main .article_container h4{
+    font-size: 20px;
     font-weight:900;
     text-transform: uppercase;
     margin: 0;
@@ -324,6 +362,7 @@ main .article_container h4{
 }
 
 main .article_container p{
+    font-size: 15px;
     font-weight:300;
     margin: 0;
     padding: 0;
@@ -337,6 +376,43 @@ main .article_container a{
    
 }
 
+main .article_container .viewers{
+    display: flex;
+    flex-direction: row;
+    color: #a7a9ac;
+    margin: 0px;
+    
+}
+
+main .article_container .viewers .myspace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid #ece9e9b2;
+    border-right-width: 1px;
+    
+}
+   
+main .article_container .viewers .myspace span{
+    margin: 0px 1px;
+}
+
+main .article_container .viewers img{
+    padding-right: 5px;
+}
+
+main .article_container .viewers .votos{
+    margin-left: 2px;
+}
+
+main .article_container .viewers .votos .btn_like{
+    border-style: none;
+    
+}
+
+main .article_container .viewers .votos .btn_unlike{
+    border-style: none;
+}
 
 /*aside*/
 
@@ -370,7 +446,7 @@ aside {
     padding-bottom: 10px;
     padding-top: 2px;
     padding-right: 10px;
-    border-bottom: 4px dashed #b2b4b6;
+    border-bottom: 2px dashed #b2b4b6;
 }
 
 .subcontainer .subtitle ul img{
@@ -464,22 +540,33 @@ footer .photo{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 footer .photo img{
     border: 0px solid #f46b7b;
     border-right-width: 1px;
-    padding-right: 10px;
+    margin: 0 5px;
 }
 
 footer .photo img:last-child{
     border-right-width: 0px;
+    margin: 0;
 }
+
 
 footer .photo ul{
     display: flex;
     border: 0px solid #f46b7b;
     border-right-width: 1px;
+}
+
+footer .footer3{
+    padding: 0px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .footer3 ul{
