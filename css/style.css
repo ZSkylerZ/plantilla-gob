@@ -406,12 +406,41 @@ main .article_container .viewers .votos{
 }
 
 main .article_container .viewers .votos .btn_like{
-    border-style: none;
-    
+    border: 1px solid #c8c8c8;
+    color: #c8c8c8;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+main .article_container .viewers .votos .btn_like:hover{
+    color: #fff;
+    background-color: #a7a9ac;
+}
+
+main .article_container .viewers .votos .btn_like:active{
+    color: #a8b2c9;
+    background-color: #3a58a1;
 }
 
 main .article_container .viewers .votos .btn_unlike{
-    border-style: none;
+    border: 1px solid #c8c8c8;
+    color: #c8c8c8;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+main .article_container .viewers .votos .btn_unlike:hover{
+    color: #fff;
+    background-color: #a7a9ac;
+}
+
+main .article_container .viewers .votos .btn_unlike:active{
+    color: #fda2a2;
+    background-color: #f83838;
 }
 
 /*aside*/
@@ -481,7 +510,7 @@ aside {
 
 
 
-.subcontainer ul .cuadrado{
+.subcontainer ul .span{
     background-color: #a7a9ac;
     width: 20px;
 }
