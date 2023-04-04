@@ -472,10 +472,13 @@ aside {
 
 .subcontainer ul li{
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 2px;
     padding-right: 10px;
     border-bottom: 2px dashed #b2b4b6;
+    min-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .subcontainer .subtitle ul img{
@@ -508,8 +511,6 @@ aside {
    
 }
 
-
-
 .subcontainer ul .span{
     background-color: #a7a9ac;
     width: 20px;
@@ -518,6 +519,60 @@ aside {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+
+.img-comentado .text-comentado{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-comentado{
+    width: 15%;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+}
+
+.text-comentado{
+    width: 75%;
+    float: right;
+}
+
+
+.bg-img-comentado{
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-left: 12px;
+    width: 47px;
+    height: 37px;
+    background-image: url("/img/icon-comentado-s.png");
+    
+}
+
+.rou-comentado {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.rou-left{
+    display: flex;
+    justify-content:flex-start; 
+    width: 23%;
+}
+
+.rou-left>img{
+    width: 47px;
+    height: 37px;
+}
+
+.rou-right{
+    display: flex;
+    justify-content:flex-end; 
+    width: 77%;
+}
+
+
 
 /*footer*/
 
