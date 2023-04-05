@@ -193,13 +193,14 @@ header a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #dc2225;
+    background-image: linear-gradient(180deg, #d12f32,#d52024,#8d1517);
     list-style: none;
     padding: 0;
     margin: 0;
     border-radius: 5px;
     font-size: 20px;
     text-transform: uppercase;
+    box-shadow: 4px 6px 11px #000000;
 }
 
 .container .menu li{
@@ -218,6 +219,7 @@ header a{
     flex-direction: row;
     text-decoration: none;
     margin: 13px 10px;
+    text-shadow: 1px 0px 2px #000, -1px 0px 2px #000;
 }
 
 
@@ -269,6 +271,7 @@ header a{
 .body-container {
     display: flex;
     flex-direction:row;
+    margin-bottom: 20px;
 }
 
 .body-container main{
@@ -280,6 +283,7 @@ header a{
 .body-container .banner{
     display: flex;
     flex-direction: row;
+    box-shadow: -1px 3px 19px #000;
 }
 
 .body-container .banner .banner-img{
@@ -328,6 +332,7 @@ header a{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 20px;
 }
 
 .body-container .article_container article{
@@ -335,12 +340,13 @@ header a{
     flex-direction: column;
     width: 280px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 17px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 7px;
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
+    box-shadow: -1px 3px 19px #000;
 }
 
 .body-container  .article-img{
@@ -349,7 +355,12 @@ header a{
 
 .body-container  .article-img img{
     width: 280px;
-   
+    cursor: pointer;
+}
+
+.body-container  .article-img:hover img{
+    width: 280px;
+    transform: scale(1.2);
 }
 
 
@@ -451,17 +462,19 @@ aside {
 }
 
 .blog .subcontainer {
-    
+    box-shadow: -1px 3px 19px #000;
 }
 
 .blog .subcontainer .subtitle{
-    background-color: #cc1526;
+    background-image: linear-gradient(180deg, #d12f32,#d52024,#8d1517);
+    box-shadow: 4px 6px 11px #000000;
     color: #fff;
     text-transform: uppercase;
     font-weight:600;
     font-size: 28px;
-    padding-left: 8px;
+    padding: 3px 0px 3px 10px;
     border-radius: 4px;
+    text-shadow: 1px 0px 2px #000, -1px 0px 2px #000;
 }
 .subcontainer ul{
     list-style: none;
@@ -472,13 +485,12 @@ aside {
 
 .subcontainer ul li{
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
     padding-top: 2px;
     padding-right: 10px;
-    border-bottom: 2px dashed #b2b4b6;
     min-height: 80px;
     margin-top: 10px;
-    margin-bottom: 10px;
+
 }
 
 .subcontainer .subtitle ul img{
@@ -490,8 +502,10 @@ aside {
     flex-direction: row;
     align-items: center;
     padding-right: 4px;
-    margin-bottom: 15px;
-    margin-top: 27px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-bottom: 2px dashed #b2b4b6;
+    padding-bottom: 15px;
 }
 
 .subcontainer ul .blog-enlace a{
@@ -534,8 +548,11 @@ aside {
 }
 
 .text-comentado{
-    width: 75%;
+    width: 80%;
     float: right;
+    font-size: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #b2b4b6;
 }
 
 
