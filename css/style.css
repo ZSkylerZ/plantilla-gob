@@ -30,11 +30,27 @@ header a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
 .barra_usuario .perfil{
     font-size: 20px;
+    background-image: url("/img/perfil-user.png");
+    background-size: 100% 100%;
+    height: 35px;
+    width: 145px;
+    justify-content:flex-start; 
+    margin-top: 10px;
+    position: absolute;
+}
+
+.barra_usuario .perfil-menu{
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.perfil-menu>ul{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .barra_usuario ul{
@@ -199,8 +215,7 @@ header a{
     margin: 0;
     border-radius: 5px;
     font-size: 20px;
-    text-transform: uppercase;
-    box-shadow: 4px 6px 11px #000000;
+    text-transform: uppercase;  
 }
 
 .container .menu li{
@@ -219,10 +234,7 @@ header a{
     flex-direction: row;
     text-decoration: none;
     margin: 13px 10px;
-    text-shadow: 1px 0px 2px #000, -1px 0px 2px #000;
 }
-
-
 
 .icon-arrow_bottom-menu{
     display: inline-block;
@@ -283,7 +295,6 @@ header a{
 .body-container .banner{
     display: flex;
     flex-direction: row;
-    box-shadow: -1px 3px 19px #000;
 }
 
 .body-container .banner .banner-img{
@@ -346,7 +357,6 @@ header a{
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    box-shadow: -1px 3px 19px #000;
 }
 
 .body-container  .article-img{
@@ -462,35 +472,58 @@ aside {
 }
 
 .blog .subcontainer {
-    box-shadow: -1px 3px 19px #000;
+    
 }
 
 .blog .subcontainer .subtitle{
-    background-image: linear-gradient(180deg, #d12f32,#d52024,#8d1517);
-    box-shadow: 4px 6px 11px #000000;
+    background-image: url("/img/banner-noticia-derecho.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: #fff;
     text-transform: uppercase;
     font-weight:600;
     font-size: 28px;
     padding: 3px 0px 3px 10px;
     border-radius: 4px;
-    text-shadow: 1px 0px 2px #000, -1px 0px 2px #000;
+    height: 55px;
 }
+
+.item-leido{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-item-leido{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-item-leido >img{
+    width: 5px;
+    height: 10px;
+}
+
+.text-item-leido{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -5px;
+    padding-left: 5px;
+}
+
+
 .subcontainer ul{
     list-style: none;
     padding-left: 0px;
     font-weight:600;
-    
 }
 
 .subcontainer ul li{
     padding-left: 10px;
     padding-bottom: 3px;
-    padding-top: 2px;
+    padding-top: 5px;
     padding-right: 10px;
     min-height: 80px;
     margin-top: 10px;
-
 }
 
 .subcontainer .subtitle ul img{
@@ -501,11 +534,11 @@ aside {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 4px;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    margin-bottom: 6px;
+    margin-top: 10px;
     border-bottom: 2px dashed #b2b4b6;
     padding-bottom: 15px;
+    margin-left: 10px;
 }
 
 .subcontainer ul .blog-enlace a{
