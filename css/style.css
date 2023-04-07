@@ -725,7 +725,6 @@ footer .footer3 ul li:last-child{
 }
 
 footer .footer3 .footer3-text{
-    background-image: url("/img/guion.png");
     display: flex;
     list-style: none;
     color: #939599;
